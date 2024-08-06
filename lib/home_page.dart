@@ -5,6 +5,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Text(
+                'Shoe\nCollection',
+                style: TextStyle(
+                  fontSize: 35, 
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
