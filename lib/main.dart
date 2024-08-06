@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_seller/global_vars.dart';
 import 'package:shoe_seller/home_page.dart';
-import 'package:shoe_seller/product_details_page.dart';
 
 void main() {
   runApp(const MyApp());

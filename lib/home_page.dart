@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:shoe_seller/global_vars.dart';
 import 'package:shoe_seller/product_card.dart';
+import 'package:shoe_seller/product_details_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -89,11 +90,21 @@ class _HomePageState extends State<HomePage> {
                   itemCount: products.length,
                   itemBuilder: (context , index) {
                     final title = products[index]['title'];
-                  return ProductCard(
-                    title: title as String,
-                    price: products[index]['price'] as double,
-                    image: products[index]['imageUrl'] as String
-                    );
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                          return ProductDetailsPage(product: products[index]);
+                        },)
+                        );
+                    },
+                    child: ProductCard(
+                      title: title as String,
+                      price: products[index]['price'] as double,
+                      image: products[index]['imageUrl'] as String
+                      ),
+                  );
                 }),
               )
             ],
