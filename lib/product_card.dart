@@ -15,7 +15,12 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(10),
+      decoration: const BoxDecoration(
+        color: Colors.blueGrey,
+        borderRadius: BorderRadius.all(Radius.circular(30))
+      ),
       child: Column(
         children: 
       [

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import "package:flutter/material.dart";
 import 'package:shoe_seller/global_vars.dart';
 import 'package:shoe_seller/product_card.dart';
