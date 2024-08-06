@@ -80,7 +80,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 ElevatedButton(
                   onPressed: () {
                     if (selectedSize == 0) {
-                      print("Lode");
+                      print("Nothing Selected");
                     }
                   }, 
                   child: const Text("Add to Cart"),
