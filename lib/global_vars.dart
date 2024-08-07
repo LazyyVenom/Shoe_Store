@@ -40,7 +40,7 @@ final cart = [
     'title': 'Nike Shoes 2',
     'company': 'Nike',
     'price': 47.42,
-    'sizes': [7,8,9,10,11],
+    'size': 8,
     'imageUrl': 'assets/images/shoes_4.png',
    }
 ];
