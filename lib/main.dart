@@ -14,7 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shoe Store',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.amber,
+          primary: Colors.amber
+          ),
         useMaterial3: true,
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,
