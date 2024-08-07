@@ -1,4 +1,6 @@
 import "package:flutter/material.dart";
+import "package:provider/provider.dart";
+import "package:shoe_seller/cart_provider.dart";
 
 class ProductDetailsPage extends StatefulWidget {
   final Map<String, Object> product;
@@ -81,6 +83,9 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                   onPressed: () {
                     if (selectedSize == 0) {
                       print("Nothing Selected");
+                    }
+                    else {
+                      Provider.of<CartProvider>(context,listen: false).addProduct(widget.product);
                     }
                   }, 
                   child: const Text("Add to Cart"),
